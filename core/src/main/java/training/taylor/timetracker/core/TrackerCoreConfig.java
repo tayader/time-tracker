@@ -13,6 +13,7 @@ import java.util.List;
  */
 @Configuration
 @ComponentScan("training.taylor.timetracker.core")
+@ContextConfiguration({"classpath*:spring/applicationContext.xml"})
 public class TrackerCoreConfig {
 
     @Bean(name = "timesheet")
